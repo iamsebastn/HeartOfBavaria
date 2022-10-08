@@ -1,0 +1,158 @@
+body {
+    font-family: 'Cormorant SC', serif;
+    margin: 0
+}
+
+.page-content {
+    width: 100%;
+}
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(rgba(23, 22, 22, 0.527),rgba(23, 22, 22, 0.527)) , url(https://www.waginger-see.de/cdn/uploads/altoetting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Text-styles*/
+#is-h1 {
+    margin: 0 0 3vh 0;
+    font-size: 7.5vw;
+    text-align: center;
+    color: #fafafa;
+    line-height: 90%;
+}
+
+.is-h2 {
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.is-h3 {
+    font-size: 2.5vw;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.is-p {
+    font-family: 'Cormorant SC', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25vw;
+    color: #fafafa;
+}
+
+.is-p.black {
+    font-family: 'Cormorant SC', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25vw;
+    text-align: center;
+    max-width: 20vw;
+    color: #111010;
+}
+
+/*Hero-Section*/
+#hero-parent {
+    height: 70vh;
+    max-width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2vh;
+
+}
+
+    .hero-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .scroll-indicator {
+            width: 30px;
+            height: 30px;
+            animation-name: indicator-move;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+
+    }
+
+        @keyframes indicator-move {
+            from{ transform: translateY(0px)}
+            to{ transform: translateY(10px)}
+        }
+
+/* acitivites Section */
+#act-content {
+    padding: 12.5vh 5vw 12.5vh 5vw;
+    background-color: #fafafa;
+}
+
+    .act-parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+        .act-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            align-items: center;
+            width: 25vw;
+        }
+
+            .activities-img_wrap {
+                width: 175px;
+                height: 175px;
+                border-radius: 100%;
+                overflow: hidden;
+            }
+
+                .act_img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            
+/*Guide*/ 
+
+#guide-content {
+    padding: 15vh 0 15vh 0;
+    background-color: #fafafa;
+}
+
+.card-parent {
+    margin: auto;
+    width: 45vw;
+    padding: 2vw;
+    background-color: #fec8de;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px #111010 ;
+}
+
+    .card-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        .card-img_wrap {
+            width: 20vw;
+            height: 32.5vh;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card_img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
